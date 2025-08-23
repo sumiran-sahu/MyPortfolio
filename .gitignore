@@ -1,0 +1,36 @@
+# Node modules (if any)
+node_modules/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Build output (if any)
+dist/
+build/
+
+# IDE/editor folders
+.vscode/
+.idea/
+
+# Environment files
+.env
+.env.*
+
+# Nginx and Docker artifacts
+*.pid
+*.conf
+
+# Misc
+*.bak
+*.tmp
+
+# Do not ignore assets or source files
+!/modern_portfolio/
+!/modern_portfolio/assets/
+
+# Ignore resume if you want privacy
+# /modern_portfolio/assets/Resume.pdf

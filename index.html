@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <title>Sumiran Sahu • Portfolio</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+    <video id="bg-video" src="assets/video1.mp4" autoplay loop muted playsinline style="position:fixed;top:0;left:0;width:100vw;height:100vh;object-fit:cover;z-index:-1;pointer-events:none;opacity:0.18;" aria-hidden="true"></video>
+  <!-- Header -->
+  <header class="header" role="banner">
+    <a href="#" class="logo">Sumiran.dev</a>
+    <button
+      class="hamburger"
+      id="hamburger"
+      aria-label="Open navigation menu"
+      aria-expanded="false"
+      aria-controls="nav-menu"
+    >
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="nav-menu" class="nav" role="navigation" aria-label="Primary">
+  <a href="#about" aria-label="About section">About</a>
+  <a href="#projects" aria-label="Projects section">Projects</a>
+  <a href="#experience" aria-label="Experience section">Experience</a>
+  <a href="#awards" aria-label="Awards section">Awards</a>
+  <a href="#contact" aria-label="Contact section">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 id="hero-name" class="hero-name">Sumiran Sahu</h1>
+      <p class="hero-tag">
+        Senior DevOps Engineer • Optimizing Cloud Infrastructure • Automating CI/CD • Driving DevSecOps
+      </p>
+      <div style="display:flex; gap:1rem; flex-wrap:wrap;">
+  <a href="#contact" class="btn" aria-label="Contact form">Get in Touch</a>
+  <a href="assets/Resume.pdf" class="btn btn-resume" download="Sumiran_Sahu_Resume.pdf" style="display:inline-flex;align-items:center;gap:.5rem;" aria-label="Download Resume PDF">
+          <i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i> Download Resume
+        </a>
+      </div>
+    </div>
+
+    <picture>
+      <img
+        src="assets/pic1.jpeg"
+        alt="Portrait of Sumiran Sahu"
+        class="hero-img"
+        loading="eager"
+        decoding="async"
+      />
+    </picture>
+
+    <!-- simple floating particles -->
+    <div class="particles" aria-hidden="true">
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+  </section>
+
+  <!-- Marquee -->
+  <section class="marquee" aria-label="Places I have worked banner" tabindex="0">
+    <video class="section-bg-video" src="assets/video1.mp4" autoplay loop muted playsinline style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:0;pointer-events:none;opacity:0.18;" aria-hidden="true"></video>
+    <h2 class="section-title small">Organizations I've Contributed To</h2>
+    <div class="marquee-container">
+      <div class="marquee-track">
+        <span>📡 Comviva</span>
+        <span>🎓 Teachnook</span>
+        <span>📡 Comviva</span>
+        <span>🎓 Teachnook</span>
+        <span>📡 Comviva</span>
+        <span>🎓 Teachnook</span>
+        <span>📡 Comviva</span>
+        <span>🎓 Teachnook</span>
+        <span>📡 Comviva</span>
+        <span>🎓 Teachnook</span>
+        <span>📡 Comviva</span>
+        <span>🎓 Teachnook</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about">
+    <video class="section-bg-video" src="assets/video1.mp4" autoplay loop muted playsinline style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:0;pointer-events:none;opacity:0.18;" aria-hidden="true"></video>
+    <div class="about-text">
+      <h2 class="section-title">About Me</h2>
+      <p>
+       Hi! I’m Sumiran Sahu, a passionate DevOps Engineer at Comviva Technologies. I specialize in building scalable, automated, and secure CI/CD pipelines, managing cloud infrastructure, and optimizing software delivery processes. I love exploring new technologies, solving complex problems, and turning innovative ideas into reliable, production-ready solutions.
+      </p>
+
+      <h3 class="subheading">Key Expertise</h3>
+  <ul class="pill-list" aria-label="Key Expertise skills">
+  <li class="skill-pill" data-logo="<img src='assets/aws.svg' alt='AWS' style='height:1.2em;'>" data-text="AWS"><span class="skill-content">AWS</span></li>
+  <li class="skill-pill" data-logo="<img src='assets/azure.svg' alt='Azure' style='height:1.2em;'>" data-text="Azure"><span class="skill-content">Azure</span></li>
+  <li class="skill-pill" data-logo="<img src='assets/terraform.svg' alt='Terraform' style='height:1.2em;'>" data-text="Terraform"><span class="skill-content">Terraform</span></li>
+  <li class="skill-pill" data-logo="<img src='assets/ansible.svg' alt='Ansible' style='height:1.2em;'>" data-text="Ansible"><span class="skill-content">Ansible</span></li>
+  <li class="skill-pill" data-logo="<img src='assets/jenkins.svg' alt='Jenkins' style='height:1.2em;'>" data-text="Jenkins"><span class="skill-content">Jenkins</span></li>
+  <li class="skill-pill" data-logo="<img src='assets/gitlab.svg' alt='GitLab' style='height:1.2em;'>" data-text="GitLab"><span class="skill-content">GitLab</span></li>
+  <li class="skill-pill" data-logo="<i class='fa-solid fa-gear'></i>" data-text="ArgoCD"><span class="skill-content">ArgoCD</span></li>
+  <li class="skill-pill" data-logo="<img src='assets/kubernetes.svg' alt='Kubernetes' style='height:1.2em;'>" data-text="Kubernetes"><span class="skill-content">Kubernetes</span></li>
+  <li class="skill-pill" data-logo="<i class='fa-solid fa-gear'></i>" data-text="Helm"><span class="skill-content">Helm</span></li>
+  <li class="skill-pill" data-logo="<img src='assets/openshift.svg' alt='OpenShift' style='height:1.2em;'>" data-text="OpenShift"><span class="skill-content">OpenShift</span></li>
+  <li class="skill-pill" data-logo="<img src='assets/prometheus.svg' alt='Prometheus' style='height:1.2em;'>" data-text="Prometheus"><span class="skill-content">Prometheus</span></li>
+  <li class="skill-pill" data-logo="<img src='assets/grafana.svg' alt='Grafana' style='height:1.2em;'>" data-text="Grafana"><span class="skill-content">Grafana</span></li>
+  <li class="skill-pill" data-logo="<img src='assets/elk.svg' alt='ELK' style='height:1.2em;'>" data-text="ELK"><span class="skill-content">ELK</span></li>
+  <li class="skill-pill" data-logo="<img src='assets/cloudwatch.svg' alt='CloudWatch' style='height:1.2em;'>" data-text="CloudWatch"><span class="skill-content">CloudWatch</span></li>
+  <li class="skill-pill" data-logo="<img src='assets/sonarqube.svg' alt='SonarQube' style='height:1.2em;'>" data-text="SonarQube"><span class="skill-content">SonarQube</span></li>
+  <li class="skill-pill" data-logo="<i class='fa-solid fa-gear'></i>" data-text="Trivy"><span class="skill-content">Trivy</span></li>
+  <li class="skill-pill" data-logo="<img src='assets/fortify.svg' alt='Fortify' style='height:1.2em;'>" data-text="Fortify"><span class="skill-content">Fortify</span></li>
+  <li class="skill-pill" data-logo="<i class='fa-solid fa-gear'></i>" data-text="MobSF"><span class="skill-content">MobSF</span></li>
+  <li class="skill-pill" data-logo="<img src='assets/nexus.svg' alt='Nexus' style='height:1.2em;'>" data-text="Nexus"><span class="skill-content">Nexus</span></li>
+  <li class="skill-pill" data-logo="<i class='fa-solid fa-gear'></i>" data-text="JFrog"><span class="skill-content">JFrog</span></li>
+  <li class="skill-pill" data-logo="<i class='fa-solid fa-terminal'></i>" data-text="Bash"><span class="skill-content">Bash</span></li>
+  <li class="skill-pill" data-logo="<i class='fab fa-docker'></i>" data-text="Docker"><span class="skill-content">Docker</span></li>
+</ul>
+    </div>
+
+    <picture>
+      <img
+        src="assets/pic2.jpeg"
+        alt="Workspace setup"
+        class="about-img"
+        loading="lazy"
+        decoding="async"
+      />
+    </picture>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="projects" aria-label="Projects">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="project-grid">
+      <article class="project-card">
+        <video src="assets/video2.mp4" autoplay loop muted playsinline poster="assets/project1.jpg" style="width:100%;border-radius:1rem;" loading="lazy"></video>
+        <div class="project-body">
+          <h3>End-to-End 3-Tier Application Deployment</h3>
+          <p>
+            Implemented an end-to-end deployment of a 3-tier web application (frontend, backend, and database) using containerization, CI/CD pipelines, and cloud-native infrastructure. The project demonstrates automation of build, deployment, monitoring, and scaling to deliver a production-ready, reliable, and secure application stack
+          </p>
+          <p class="stack"><strong>Tech Stack:</strong> AWS, K8s, Docker, Helm, Ansible, Prometheus, Grafana, Jenkins, Git, ArgoCD</p>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <video src="assets/video3.mp4" autoplay loop muted playsinline poster="assets/project2.jpg" style="width:100%;border-radius:1rem;" loading="lazy"></video>
+        <div class="project-body">
+          <h3>MetricHive</h3>
+          <p>
+            MetricHive is an observability project that integrates metrics, logs, and traces into a unified platform. It enables real-time monitoring, alerting, and visualization to ensure infrastructure reliability, application performance, and faster incident response.
+          </p>
+          <p class="stack"><strong>Tech Stack:</strong> Aws, Docker, Kubernetes, Terraform, Helm, ArgoCd, Jenkins, Ansible , Prometheus ,Grafana ,ELK </p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="experience" aria-label="Experience timeline">
+    <h2 class="section-title">Experience</h2>
+    <div class="timeline">
+      <div class="timeline-line"></div>
+      <div class="timeline-items">
+        <div class="timeline-item left">
+          <span class="timeline-dot" aria-hidden="true"></span>
+          <article class="exp-card">
+            <header>
+              <h3>Senior DevOps Engineer <span class="role-emoji" aria-hidden="true">🚀</span></h3>
+              <p class="meta">Comviva • Dec 2024 – Present</p>
+            </header>
+            <ul>
+              <li>Architected secure, scalable DevOps workflows with a focus on DevSecOps by embedding security into CI/CD and cloud infrastructure. Led automation, improved observability, enforced security practices (vulnerability scanning, compliance, secrets management), and mentored teams to adopt best practices.</li>
+            </ul>
+          </article>
+        </div>
+        <div class="timeline-item right">
+          <span class="timeline-dot" aria-hidden="true"></span>
+          <article class="exp-card">
+            <header>
+              <h3>DevOps Engineer <span class="role-emoji" aria-hidden="true">⚙️</span></h3>
+              <p class="meta">Comviva • Dec 2023 – Dec 2024</p>
+            </header>
+            <ul>
+              <li>Implemented CI/CD pipelines, automated deployments, and managed containerized applications in cloud environments. Hands-on with monitoring, logging, and Infrastructure as Code to streamline development and improve system reliability</li>
+            </ul>
+          </article>
+        </div>
+        <div class="timeline-item left">
+          <span class="timeline-dot" aria-hidden="true"></span>
+          <article class="exp-card">
+            <header>
+              <h3>Trainee Engineer <span class="role-emoji" aria-hidden="true">🛠️</span></h3>
+              <p class="meta">Comviva • Jul 2023 – Dec 2023</p>
+            </header>
+            <ul>
+              <li>Worked on foundational DevOps practices including CI/CD pipelines, version control, scripting, and cloud basics. Collaborated with teams to understand deployment workflows and system monitoring.</li>
+      
+            </ul>
+          </article>
+        </div>
+        <div class="timeline-item right">
+          <span class="timeline-dot" aria-hidden="true"></span>
+          <article class="exp-card">
+            <header>
+              <h3>AWS Intern <span class="role-emoji" aria-hidden="true">☁️</span></h3>
+              <p class="meta">Teachnook • Nov 2022 – Dec 2022</p>
+            </header>
+            <ul>
+              <li>Completed an internship focused on AWS services such as EC2, S3, IAM, and networking (VPC). Assisted in setting up and managing resources while learning best practices for security, scalability, and cost optimization in cloud environments.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Awards -->
+  <section id="awards" class="awards" aria-label="Awards and Certifications">
+  <video class="section-bg-video" src="assets/video1.mp4" autoplay loop muted playsinline style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:0;pointer-events:none;opacity:0.18;" aria-hidden="true"></video>
+    <h2 class="section-title">Awards & Certifications</h2>
+
+
+
+    <div class="award-list">
+      <div style="background:rgba(10,10,10,0.85);border-radius:1rem;box-shadow:0 2px 12px rgba(0,0,0,0.18);padding:1.2rem 1.5rem;width:160px;min-height:120px;display:flex;flex-direction:column;justify-content:center;align-items:center;margin:0 auto 1.5rem;">
+        <article class="award-card" style="background:transparent;box-shadow:none;margin-bottom:0;width:100%;text-align:center;">
+          <h3>🏆 5× ACE Card Award</h3>
+          <p>Comviva Technologies</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="testimonials" aria-label="Testimonials">
+    <h2 class="section-title">Testimonials</h2>
+    <div class="testimonial-list">
+      <blockquote class="testimonial">
+        <p>“Sumiran is a true DevOps expert. His automation skills and cloud knowledge helped us deliver projects faster and more reliably.”</p>
+        <footer>— Bikram Kumar Malla, Senior  DevOps Engineer, Comviva</footer>
+      </blockquote>
+      <blockquote class="testimonial">
+        <p>“A pleasure to work with! Sumiran’s attention to detail and proactive approach made a huge impact on our CI/CD pipelines.”</p>
+        <footer>— Manas ranjan Pattanaik, Senior Developer, Comviva</footer>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Blog/Articles -->
+  <section id="blog" class="blog" aria-label="Blog and Articles">
+    <h2 class="section-title">Blog & Articles</h2>
+    <div class="blog-list">
+      <article class="blog-card">
+        <h3>How to Set Up SSH for Two Different GitLab Accounts on a Single Machine</h3>
+        <p>Step-by-step guide to managing multiple GitLab SSH keys on one device for seamless workflow.</p>
+        <a href="https://medium.com/@sumiransahu8/how-to-set-up-ssh-for-two-different-gitlab-accounts-on-a-single-machine-2c7329685453" target="_blank" rel="noopener" class="read-more-link">Read more &rarr;</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section class="education" aria-label="Education">
+    <h2 class="section-title">Education</h2>
+    <div class="edu-grid">
+      <article class="edu-card">
+        <h3>🎓 Siksha 'O' Anusandhan University</h3>
+        <p>B.Tech, Computer Science (2019 - 2023)</p>
+      </article>
+      <article class="edu-card">
+        <h3>🏫 E-Tech Residential Higher Secondary School</h3>
+        <p>Senior Secondary, Science (2017 - 2019)</p>
+      </article>
+      <article class="edu-card">
+        <h3>📚 Saraswati Vidhya Mandir</h3>
+        <p>Matriculation (2009 - 2017)</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Contact -->
+<section id="contact" class="contact" aria-label="Contact">
+  <div class="contact-info" style="margin: 0 auto; max-width: 480px; text-align: center;">
+    <h2 class="section-title">Let's Connect</h2>
+    <p>I'm always interested in hearing about new projects and opportunities. Whether you have a question or just want to say hi, feel free to reach out!</p>
+    <ul class="contact-list" style="justify-content: center;">
+      <li>📧 <strong>Email:</strong> <a href="mailto:sumiransahu8@gmail.com">sumiransahu8@gmail.com</a></li>
+      <li>📱 <strong>Phone:</strong> <a href="tel:+91XXXXXXXXXX">+91 XXXXXXXXXX</a></li>
+      <li>📍 <strong>Location:</strong> Patia, Bhubaneswar, India</li>
+      <li>💼 <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sumiran-sahu/" target="_blank" rel="noopener">linkedin.com/in/sumiran-sahu</a></li>
+    </ul>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+  <video class="section-bg-video" src="assets/video1.mp4" autoplay loop muted playsinline style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:0;pointer-events:none;opacity:0.18;" aria-hidden="true"></video>
+    <div class="footer-socials" aria-label="Social media links">
+      <div style="display:flex; gap:1.5rem; flex-wrap:wrap; align-items:center; justify-content:center;">
+        <a href="https://github.com/sumiran-sahu" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:.5rem;">
+          <i class="fab fa-github" aria-hidden="true"></i>
+          <span>GitHub</span>
+        </a>
+        <a href="https://www.linkedin.com/in/sumiran-sahu" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:.5rem;">
+          <i class="fab fa-linkedin" aria-hidden="true"></i>
+          <span>LinkedIn</span>
+        </a>
+        <a href="mailto:sumiransahu8@gmail.com" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:.5rem;">
+          <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+          <span>Gmail</span>
+        </a>
+        <a href="https://www.instagram.com/sumiran__20/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:.5rem;">
+          <i class="fab fa-instagram" aria-hidden="true"></i>
+          <span>Instagram</span>
+        </a>
+      </div>
+    </div>
+    <p class="footer-copy">© 2025 Sumiran Sahu. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+  </script>
+</body>
+</html>
